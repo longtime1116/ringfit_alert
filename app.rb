@@ -4,6 +4,7 @@ require "slack/incoming/webhooks"
 #require "pp"
 
 slack = Slack::Incoming::Webhooks.new ENV["SLACK_WEBHOOK_URL"]
+slack.post "start running script..."
 
 html = URI.open("https://min-zaiko.com/ring-fit-adventure") { |f| f.read }
 
@@ -19,3 +20,4 @@ doc = Nokogiri::HTML.parse(html)
     end
   end
 end
+slack.post "finished!!!"
