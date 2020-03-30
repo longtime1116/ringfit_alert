@@ -1,7 +1,7 @@
 # これは何
 リングフィットアドベンチャーの在庫情報のサイトを定期的にチェックしてslackに通知するやつ
 
-# 実行
+# 単発実行
 
 ```sh
 export SLACK_WEBHOOK_URL="xxxxxx"
